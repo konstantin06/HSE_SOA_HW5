@@ -1,0 +1,17 @@
+apiVersion: 1
+datasources:
+  - name: Cinema ClickHouse
+    uid: cinema-ch
+    type: grafana-clickhouse-datasource
+    access: proxy
+    editable: false
+    isDefault: true
+    jsonData:
+      host: clickhouse
+      port: 8123
+      protocol: http
+      secure: false
+      username: dashboard
+      defaultDatabase: cinema
+    secureJsonData:
+      password: dashboard_demo
